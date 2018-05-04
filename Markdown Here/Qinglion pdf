@@ -1,0 +1,194 @@
+
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+.markdown-preview.markdown-preview {
+  // modify your style here
+  // eg: background-color: blue;
+
+  p{
+    /* !important is needed here because Hotmail/Outlook.com uses !important to
+       kill the margin in <p>. We need this to win. */
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    line-height: 1.8em !important;
+    letter-spacing: 0.1em !important;
+    margin: 1em 1em !important; /* 增加段落边距 */
+    text-align: justify !important;
+  }
+
+
+    table, pre, dl, blockquote, q, ul, ol {
+    margin: 1.2em 0em;
+  }
+
+  ul, ol {
+    padding-left: 0em;
+    margin: 1.2em 2em;
+
+  }
+
+  li{
+    margin: 0.2em 0;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    line-height: 1.8em !important;
+    letter-spacing: 0.1em !important;
+    margin: 0.2em 0.2em !important;
+    text-align: justify !important;
+  }
+
+  ul li {
+    margin: 0.2em 0;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    line-height: 1.8em !important;
+    letter-spacing: 0.1em !important;
+    margin: 0.2em 0.2em !important;
+  }
+
+  /* Smaller spacing for sub-lists */
+  ul ul, ul ol, ol ul, ol ol {
+    margin: 0;
+    padding-left: 1em;
+  }
+
+  /* Use Roman numerals for sub-ordered-lists. (Like Github.) */
+  ol ol, ul ol {
+    list-style-type: circle;
+  }
+
+  /* Use letters for sub-sub-ordered lists. (Like Github.) */
+  ul ul ol, ul ol ol, ol ul ol, ol ol ol {
+    list-style-type: square;
+  }
+
+  dl {
+    padding: 0;
+  }
+
+  dl dt {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  dl dd {
+    margin: 0 0 1em;
+    padding: 0 1em;
+  }
+
+  blockquote, q {
+    border-left: 4px solid #3bb8af;
+    /* background-color: #fafafa;*/
+    padding: 0em; /* 删除内边距 */
+    margin: 0em 1em;
+    color: #777;
+    quotes: none;
+  }
+
+
+  strong, b{
+    color: #3bb8af;
+  }
+
+
+  /* 设置引用文本颜色 */
+  blockquote p {
+    color: rgb(119, 117, 117) !important
+  }
+
+  blockquote::before, blockquote::after, q::before, q::after {
+    content: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1.3em 1em 1em;
+    padding: 1em;
+    font-weight: bold;
+    letter-spacing: 0.1em !important;
+  }
+
+  h1 {
+    font-size: 1.6em;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: black;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #3bb8af;
+  }
+
+  h3 {
+    font-size: 1.3em;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #3bb8af;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  h6 {
+    font-size: 1em;
+    color: #777;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: .8em;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  tbody {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  table tr {
+    border: 0;
+    border-top: 1px solid #CCC;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  table tr:nth-child(2n) {
+    background-color: #F8F8F8;
+  }
+
+  table tr th, table tr td {
+    font-size: 0.8em;
+    border: 1px solid #CCC;
+    margin: 0;
+    padding: 0.5em 1em;
+  }
+
+  table tr th {
+   font-weight: bold;
+   background-color: #F0F0F0;
+  }
+
+
+  &.phantomjs-image {
+
+  }
+
+
+}
